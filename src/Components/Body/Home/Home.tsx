@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Home():JSX.Element {
+function Home(): JSX.Element {
   return <>This is home</>;
 }
 

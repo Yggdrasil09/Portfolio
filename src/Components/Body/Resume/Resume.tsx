@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Resume():JSX.Element {
+function Resume(): JSX.Element {
   return <>Resume</>;
 }
 

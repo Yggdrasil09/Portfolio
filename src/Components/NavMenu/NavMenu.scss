@@ -1,0 +1,6 @@
+.navButton {
+    text-decoration: none !important;
+    &:hover {
+        border: dashed 2px white;
+    }
+}

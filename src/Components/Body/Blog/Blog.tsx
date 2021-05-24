@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Blog():JSX.Element {
+function Blog(): JSX.Element {
   return <>your in blog</>;
 }
 

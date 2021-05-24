@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Contact():JSX.Element {
+function Contact(): JSX.Element {
   return <>Your in Contact</>;
 }
 

@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Work():JSX.Element {
+function Work(): JSX.Element {
   return <>Work</>;
 }
 

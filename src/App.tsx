@@ -13,7 +13,7 @@ import Contact from './Components/Body/Contact/Contact';
 
 import './App.scss';
 
-function Main():JSX.Element {
+function Main(): JSX.Element {
   return (
     <Switch>
       <Route exact path="/" component={Home} />
@@ -27,7 +27,7 @@ function Main():JSX.Element {
   );
 }
 
-function App():JSX.Element {
+function App(): JSX.Element {
   return (
     <Router>
       <div>
