@@ -54,5 +54,3 @@ export const config: configInterface = {
     },
   ],
 };
-
-// export default config;

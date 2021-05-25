@@ -14,14 +14,6 @@
             text-decoration: none;
         }
 
-        div {
-            width: 60%;
-        }
-
-        .rightFooter {
-            margin-left: 40%;
-        }
-
         span {
             display: block;
             text-align: center;
@@ -32,7 +24,9 @@
             }
 
             .socialIcon {
-                width: 1.75rem;
+                min-width: 1.5rem;
+                overflow:hidden;
+                width: 2rem;
                 margin: 1rem;
                 color: $yellow;
 
@@ -62,6 +56,16 @@
             margin-right: 50%;
             border: 1px inset $yellow;
         }
+    }
+
+    .leftCol {
+        padding-left: 0;
+        padding-right: 3rem;
+    }
+
+    .rightCol {
+        padding-right: 0;
+        padding-left: 3rem;
     }
 }
 
