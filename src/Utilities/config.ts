@@ -33,10 +33,6 @@ export const config: configInterface = {
       url: '/about',
     },
     {
-      name: 'Blog',
-      url: '/blog',
-    },
-    {
       name: 'Experience',
       url: '/experience',
     },
@@ -45,12 +41,16 @@ export const config: configInterface = {
       url: '/work',
     },
     {
-      name: 'Contact',
-      url: '/contact',
+      name: 'Blog',
+      url: '/blog',
     },
     {
       name: 'Resume',
       url: '/resume',
+    },
+    {
+      name: 'Contact',
+      url: '/contact',
     },
   ],
 };

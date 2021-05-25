@@ -38,7 +38,7 @@ function Footer(): JSX.Element {
         <Col className="footerCol rightCol" lg={2} md={2} xl={1}>
           <div>
             <span className="sitesCol">
-              <a href={email.url} aria-label={email.site} target="_blank" rel="noopener noreferrer">
+              <a href={`mailto:${email.url}`} aria-label={email.site} target="_blank" rel="noopener noreferrer">
                 <Email />
               </a>
             </span>
