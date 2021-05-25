@@ -1,8 +1,9 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { Navbar, Button } from 'react-bootstrap';
+import { Navbar } from 'react-bootstrap';
 
-import { config } from '../config';
+import NavButton from './NavButton';
+import { config } from '../../Utilities/config';
 import './NavMenu.scss';
 
 interface InavLink {
@@ -16,23 +17,19 @@ function NavMenu(): JSX.Element {
       <Navbar
         collapseOnSelect
         expand="lg"
-        bg="dark"
         variant="dark"
         fixed="top"
+        className="navBar"
       >
         <Navbar.Brand href="/">Portfolio</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <NavLink className="mr-auto" to="/">
-            <Button className="navButton" variant="link">
-              Home
-            </Button>
+            <NavButton name="Home" />
           </NavLink>
-          {config.navLinks.map((obj: InavLink) => (
+          {config.navLinks.map((obj: InavLink, index: number) => (
             <NavLink key={obj.url} to={obj.url}>
-              <Button className="navButton" variant="link">
-                {obj.name}
-              </Button>
+              <NavButton name={obj.name} index={index} />
             </NavLink>
           ))}
         </Navbar.Collapse>

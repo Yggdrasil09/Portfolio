@@ -1,0 +1,84 @@
+@import '../../Utilities/colors';
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    
+    .footerCol {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+
+        a {
+            text-decoration: none;
+        }
+
+        div {
+            width: 60%;
+        }
+
+        .rightFooter {
+            margin-left: 40%;
+        }
+
+        span {
+            display: block;
+            text-align: center;
+            margin: 0.5rem;
+
+            &:hover {
+                border: dashed 3px $orange;
+            }
+
+            .socialIcon {
+                width: 1.75rem;
+                margin: 1rem;
+                color: $yellow;
+
+                &:hover {
+                    color: $orange;
+                    cursor: pointer;
+                    -webkit-animation-duration: 1s;
+                    animation-duration: 1s;
+                    -webkit-animation-fill-mode: both;
+                    animation-fill-mode: both;
+                    -webkit-animation-timing-function: ease-in-out;
+                    animation-timing-function: ease-in-out;
+                    animation-iteration-count: infinite;
+                    -webkit-animation-iteration-count: infinite;
+                    animation-name: bounce;
+                    -moz-animation-name: bounce;
+                }
+
+            }
+
+        }
+        
+        .vLine {
+            width: 0;
+            height: 7vh;
+            margin-left: 50%;
+            margin-right: 50%;
+            border: 1px inset $yellow;
+        }
+    }
+}
+
+@keyframes bounce {
+	0%, 100%, 20%, 50%, 80% {
+		-webkit-transform: translateY(0);
+		-ms-transform:     translateY(0);
+		transform:         translateY(0)
+	}
+	40% {
+		-webkit-transform: translateY(-20px);
+		-ms-transform:     translateY(-20px);
+		transform:         translateY(-20px)
+	}
+	60% {
+		-webkit-transform: translateY(-15px);
+		-ms-transform:     translateY(-15px);
+		transform:         translateY(-15px)
+	}
+}

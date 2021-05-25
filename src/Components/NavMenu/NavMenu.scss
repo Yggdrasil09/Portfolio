@@ -1,6 +1,28 @@
-.navButton {
-    text-decoration: none !important;
-    &:hover {
-        border: dashed 2px white;
+@import '../../Utilities/colors';
+
+.navBar {
+    height: 8vh;
+    background-color : $primary-color;
+
+    .navButton {
+        text-decoration: none !important;
+        font-size: 1.25em !important;
+        color: $yellow;
+        margin: 0.25em;
+        &:hover {
+            color: $orange !important;
+        }
+        &:focus {
+            border: dashed 3px $orange;
+            box-shadow: none;
+        }
+
+        .buttonIndex {
+            color: $orange;
+            margin: 1mm;
+        }
+
     }
 }
+
+
