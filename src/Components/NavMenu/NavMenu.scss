@@ -9,6 +9,7 @@
         font-size: 1.25em !important;
         color: $yellow;
         margin: 0.25em;
+        border: solid 3px transparent;
         &:hover {
             color: $orange !important;
         }

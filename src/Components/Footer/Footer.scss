@@ -14,7 +14,7 @@
             text-decoration: none;
         }
 
-        span {
+        .sitesCol {
             display: block;
             text-align: center;
             margin: 0.5rem;
@@ -44,17 +44,18 @@
                     animation-name: bounce;
                     -moz-animation-name: bounce;
                 }
-
             }
-
         }
-        
-        .vLine {
-            width: 0;
-            height: 7vh;
-            margin-left: 50%;
-            margin-right: 50%;
-            border: 1px inset $yellow;
+
+        .leftFooter, .rightFooter {
+            display: flex;
+            justify-content: center;
+
+            .vLine {
+                width: 0;
+                height: 7vh;
+                border: 1px inset $yellow;
+            }
         }
     }
 
