@@ -5,19 +5,20 @@
 
     .aboutRow {
         position: sticky;
-        height: 100vh;
         display: flex;
         align-items: center;
         z-index: 10;
 
         .aboutCol {
-            height: 100vh;
+            margin-top: 10rem;
             display: flex;
             flex-direction: column;
             justify-content: center;
 
             div {
                 margin-bottom: 2rem;
+                border-bottom: solid 1px $secondarytext-color;
+                padding-bottom: 1rem;
 
                 h2 {
                     display: inline;
@@ -33,6 +34,15 @@
             h5 {
                 margin-bottom: 2rem;
                 color: $tertiray-color;
+            }
+        }
+
+        .skillCol {
+
+            h2{
+                color: $text-color;
+                border-bottom: solid 1px $secondarytext-color;
+                padding-bottom: 1rem;
             }
         }
     }
