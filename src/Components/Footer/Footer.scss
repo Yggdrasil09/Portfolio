@@ -4,34 +4,31 @@
     position: fixed;
     bottom: 0;
     width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: space-between;
     
-    .footerCol {
-        display: flex;
-        justify-content: flex-end;
-        flex-direction: column;
-
-        a {
-            text-decoration: none;
-        }
+    div {
 
         .sitesCol {
             display: block;
             text-align: center;
-            margin: 0.5rem;
+            margin: 0.25rem;
+            border: solid 3px transparent;
 
             &:hover {
-                border: dashed 3px $orange;
+                border: dashed 3px $secondary-color;
             }
 
             .socialIcon {
                 min-width: 1.5rem;
                 overflow:hidden;
-                width: 2rem;
+                width: 1rem;
                 margin: 1rem;
-                color: $yellow;
+                color: $tertiray-color;
 
                 &:hover {
-                    color: $orange;
+                    color: $secondary-color;
                     cursor: pointer;
                     -webkit-animation-duration: 1s;
                     animation-duration: 1s;
@@ -46,27 +43,17 @@
                 }
             }
         }
+    }
 
-        .leftFooter, .rightFooter {
-            display: flex;
-            justify-content: center;
+    .leftFooter, .rightFooter {
+        display: flex;
+        justify-content: center;
 
-            .vLine {
-                width: 0;
-                height: 7vh;
-                border: 1px inset $yellow;
-            }
+        .vLine {
+            width: 0;
+            height: 25vh;
+            border: 1px inset $tertiray-color;
         }
-    }
-
-    .leftCol {
-        padding-left: 0;
-        padding-right: 3rem;
-    }
-
-    .rightCol {
-        padding-right: 0;
-        padding-left: 3rem;
     }
 }
 

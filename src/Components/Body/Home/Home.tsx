@@ -3,23 +3,34 @@ import {
   Container, Row, Col, Button,
 } from 'react-bootstrap';
 
+import { socialSites } from '../../../Utilities/social';
+import { info } from '../../../Utilities/info';
 import './Home.scss';
+
+const { email } = socialSites;
 
 function Home(): JSX.Element {
   return (
     <Container className="home">
       <Row className="homeRow">
         <Col xs={1} />
-        <Col xs={9}>
-          <h4>Hi, I am</h4>
-          <h1>Karthik Chowdary Paladugu.</h1>
-          <h1>I am a Software Developer</h1>
-          <h4>
-            I am a Boston-based software engineer who specializes in building (and occasionally designing)
-            exceptional digital experiences. Currently, I am an engineer at Upstatement focused on building
-            accessible, human-centered products.
+        <Col xs={9} className="homeCol">
+          <h4 className="secHead">Hi, I am</h4>
+          <h1 className="priHead">{info.name}</h1>
+          <h1>{info.position}</h1>
+          <h4 className="descHead">
+            {info.description}
           </h4>
-          <Button variant="warning"> Get in Touch</Button>
+          <a
+            href={`mailto:${email.url}`}
+            aria-label={email.site}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button className="homeButton" variant="link">
+              Get in Touch
+            </Button>
+          </a>
         </Col>
         <Col xs={2} />
       </Row>

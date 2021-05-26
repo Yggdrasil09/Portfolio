@@ -30,11 +30,9 @@ function Main(): JSX.Element {
 function App(): JSX.Element {
   return (
     <Router>
-      <div>
-        <NavMenu />
-        <Main />
-        <Footer />
-      </div>
+      <NavMenu />
+      <Main />
+      <Footer />
     </Router>
   );
 }

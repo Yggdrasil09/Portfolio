@@ -4,8 +4,47 @@
     height: 100vh;
 
     .homeRow {
+        position: sticky;
         height: 100vh;
         display: flex;
         align-items: center;
+        z-index: 10;
+
+        .homeCol {
+            color: $tertiray-color;
+
+            h4 {
+                font-size: 1.25rem;
+            }
+
+            h1 {
+                font-size: 4rem;
+            }
+
+            .secHead {
+                color: $secondary-color;
+            }
+
+            .priHead {
+                color: $secondarytext-color;
+            }
+
+            .descHead {
+                color: $text-color;
+            }
+
+            .homeButton {
+                padding: 1rem 1.75rem;
+                text-decoration: none !important;
+                color: $secondary-color;
+                margin-top: 2rem;
+                border: solid 2px $secondary-color;
+                border-radius: 6px;
+
+                &:hover {
+                    background-color: $button-shade;
+                }
+            }
+        }
     }
 }

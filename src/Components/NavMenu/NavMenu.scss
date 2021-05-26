@@ -7,19 +7,21 @@
     .navButton {
         text-decoration: none !important;
         font-size: 1.25em !important;
-        color: $yellow;
+        color: $tertiray-color;
         margin: 0.25em;
         border: solid 3px transparent;
+
         &:hover {
-            color: $orange !important;
+            color: $secondary-color !important;
         }
+        
         &:focus {
-            border: dashed 3px $orange;
+            border: dashed 3px $secondary-color;
             box-shadow: none;
         }
 
         .buttonIndex {
-            color: $orange;
+            color: $secondary-color;
             margin: 1mm;
         }
 

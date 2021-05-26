@@ -4,8 +4,36 @@
     height: 100vh;
 
     .aboutRow {
+        position: sticky;
         height: 100vh;
         display: flex;
         align-items: center;
+        z-index: 10;
+
+        .aboutCol {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            div {
+                margin-bottom: 2rem;
+
+                h2 {
+                    display: inline;
+                    color: $text-color;
+                }
+    
+                h4 {
+                    display: inline;
+                    color: $secondary-color;
+                }
+            }
+
+            h5 {
+                margin-bottom: 2rem;
+                color: $tertiray-color;
+            }
+        }
     }
 }
