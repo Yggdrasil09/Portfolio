@@ -1,19 +1,21 @@
 @import '../../../Utilities/colors';
 
 .about {
-    height: 100vh;
 
     .aboutRow {
-        position: sticky;
+        position: fixed;
         display: flex;
         align-items: center;
         z-index: 10;
 
         .aboutCol {
-            margin-top: 10rem;
+            margin-top: 7rem;
             display: flex;
             flex-direction: column;
             justify-content: center;
+        }
+
+        .aboutSection {
 
             div {
                 margin-bottom: 2rem;
@@ -38,11 +40,26 @@
         }
 
         .skillCol {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
 
-            h2{
+            h2 {
                 color: $text-color;
                 border-bottom: solid 1px $secondarytext-color;
                 padding-bottom: 1rem;
+            }
+
+            div {
+
+                ul {
+                    columns: 40vh;
+                    color: $tertiray-color;
+
+                    li::marker {
+                        color: $secondary-color;
+                    }
+                }
             }
         }
     }

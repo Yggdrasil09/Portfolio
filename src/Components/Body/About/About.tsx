@@ -9,24 +9,42 @@ function About(): JSX.Element {
   return (
     <Container className="about">
       <Row className="aboutRow">
-        <Col md={1} />
-        <Col md={6} className="aboutCol">
-          <div>
-            <h4>01. </h4>
-            <h2>About Me</h2>
+        <Col md={10} className="aboutCol">
+          <Container fluid>
+            <Row>
+              <Col md={7} className="aboutSection">
+                <div>
+                  <h4>01. </h4>
+                  <h2>About Me</h2>
+                </div>
+                <h5>{about.details}</h5>
+                <h5>{about.moreInfo}</h5>
+              </Col>
+              <Col md={5} className="aboutSection">
+                <img src={ProfileImg.default} alt="user" />
+              </Col>
+            </Row>
+          </Container>
+          <div className="skillCol">
+            <h2>My Skills</h2>
+            <div>
+              <ul>
+                { about.skills.map((skill:string) => (
+                  <li key={skill}>{skill}</li>
+                ))}
+              </ul>
+            </div>
+            <h2>Tools</h2>
+            <div>
+              <ul>
+                { about.tools.map((tool:string) => (
+                  <li key={tool}>{tool}</li>
+                ))}
+              </ul>
+            </div>
           </div>
-          <h5>{about.details}</h5>
-          <h5>{about.moreInfo}</h5>
         </Col>
-        <Col md={3} className="aboutCol"><img src={ProfileImg.default} alt="user" /></Col>
         <Col md={2} />
-      </Row>
-      <Row className="aboutRow">
-        <Col xs={1} />
-        <Col xs={9} className="skillCol">
-          <h2>My Skills</h2>
-        </Col>
-        <Col xs={2} />
       </Row>
     </Container>
   );
