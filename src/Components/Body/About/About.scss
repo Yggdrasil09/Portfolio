@@ -1,23 +1,58 @@
 @import '../../../Utilities/colors';
 
+@mixin layout($width: 80%, $imgPadding: 10rem) {
+    .aboutSection {
+        width: $width !important;
+        display: flex !important;
+        flex-direction: column !important;
+        
+        .aboutContent {
+            order: 1;
+            flex: 100% !important;
+            height: 100vh;
+        }
+    
+        .aboutImg {
+            order: 0;
+            flex: 100% !important;
+            height: 100vh;
+            padding-top: $imgPadding !important;
+        }
+    }
+
+    .skillSection {
+        width: $width !important;
+    }
+}
+
 .about {
+    padding-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    bottom:0;
+    overflow-x:hidden;
+    z-index: 10;
+    align-items: center;
+    justify-content: center;
 
-    .aboutRow {
-        position: fixed;
+    .aboutSection {
+        width: 60%;
+        flex: 100%;
         display: flex;
+        flex-direction: row;
+        justify-content: space-around;
         align-items: center;
-        z-index: 10;
 
-        .aboutCol {
-            margin-top: 7rem;
+        .aboutContent {
+            flex: 60%;
             display: flex;
             flex-direction: column;
+            align-items: stretch;
             justify-content: center;
-        }
 
-        .aboutSection {
-
-            div {
+            .aboutHead {
                 margin-bottom: 2rem;
                 border-bottom: solid 1px $secondarytext-color;
                 padding-bottom: 1rem;
@@ -33,16 +68,30 @@
                 }
             }
 
-            h5 {
-                margin-bottom: 2rem;
-                color: $tertiray-color;
+            .aboutData {
+                h5 {
+                    margin-bottom: 2rem;
+                    color: $tertiray-color;
+                }
             }
         }
 
-        .skillCol {
+        .aboutImg {
+            flex: 40%;
             display: flex;
-            flex-direction: column;
             justify-content: center;
+            align-items: center;
+        }
+    }
+
+    .skillSection {
+        height: auto;
+        width: 60%;
+        flex: 100%;
+        display: flex;
+        flex-direction: column;
+
+        .skills {
 
             h2 {
                 color: $text-color;
@@ -50,17 +99,31 @@
                 padding-bottom: 1rem;
             }
 
-            div {
+            .list {
+                columns: 30vh;
+                color: $tertiray-color;
 
-                ul {
-                    columns: 40vh;
-                    color: $tertiray-color;
-
-                    li::marker {
-                        color: $secondary-color;
-                    }
+                li::marker {
+                    color: $secondary-color;
                 }
             }
         }
     }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+    @include layout($width: 60%);
+}
+
+@media only screen and (min-width: 480px) and (max-width: 799px){
+    @include layout($width: 60%, $imgPadding: 30rem);
+}
+
+@media (min-width: 800px) and (max-width: 991px){
+    @include layout($imgPadding: 7rem);
+    
+}
+
+@media (min-width: 992px) and (max-width: 1281px){
+    @include layout;
 }

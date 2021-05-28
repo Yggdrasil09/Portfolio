@@ -1,0 +1,30 @@
+@import '../../../Utilities/colors';
+
+.expContainer {
+
+    .expRow {
+        display: flex;
+        align-items: center;
+        z-index: 10;
+
+        .expCol {
+            margin-top: 7rem;
+
+            .expHeader {
+                margin-bottom: 2rem;
+                border-bottom: solid 1px $secondarytext-color;
+                padding-bottom: 1rem;
+
+                h2 {
+                    display: inline;
+                    color: $text-color;
+                }
+    
+                h4 {
+                    display: inline;
+                    color: $secondary-color;
+                }
+            }
+        }
+    }
+}

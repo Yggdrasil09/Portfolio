@@ -8,7 +8,7 @@
         text-decoration: none !important;
         font-size: 1.25em !important;
         color: $tertiray-color;
-        margin: 0.25em;
+        padding-top: 0.25em;
         border: solid 3px transparent;
 
         &:hover {
@@ -22,7 +22,7 @@
 
         .buttonIndex {
             color: $secondary-color;
-            margin: 1mm;
+            padding: 1mm;
         }
 
     }
