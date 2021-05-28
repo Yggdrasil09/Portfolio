@@ -25,7 +25,7 @@
                 overflow:hidden;
                 width: 1rem;
                 margin: 1rem;
-                color: $tertiray-color;
+                color: $tertiary-color;
 
                 &:hover {
                     color: $secondary-color;
@@ -52,7 +52,7 @@
         .vLine {
             width: 0;
             height: 25vh;
-            border: 1px inset $tertiray-color;
+            border: 1px inset $tertiary-color;
         }
     }
 }

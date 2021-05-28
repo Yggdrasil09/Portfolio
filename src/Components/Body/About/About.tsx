@@ -1,7 +1,7 @@
 import React from 'react';
 
 import * as ProfileImg from '../../../Utilities/Images/profile.png';
-import { about } from '../../../Utilities/about';
+import { about } from '../../../Utilities/data/about';
 import './About.scss';
 
 function About(): JSX.Element {

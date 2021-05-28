@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { socialSites } from '../../Utilities/social';
+import { socialSites } from '../../Utilities/data/social';
 import { ReactComponent as Github } from '../../Utilities/Images/github.svg';
 import { ReactComponent as LinkedIn } from '../../Utilities/Images/linkedin.svg';
 import { ReactComponent as Twitter } from '../../Utilities/Images/twitter.svg';

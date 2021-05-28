@@ -1,24 +1,31 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Chrono } from 'react-chrono';
 
+import { colors } from '../../../Utilities/data/colors';
+import { experience } from '../../../Utilities/data/experience';
 import './Experience.scss';
 
 function Experience(): JSX.Element {
   return (
-    <Container className="expContainer">
-      <Row className="expRow">
-        <Col xs={10} className="expCol">
-          <div className="expHeader">
-            <h4>02. </h4>
-            <h2>My Experience</h2>
-          </div>
-          <div className="expTimeline">
-            Here goes timeline
-          </div>
-        </Col>
-        <Col xs={2} />
-      </Row>
-    </Container>
+    <div className="expCon">
+      <div className="expHeader">
+        <h4>02. </h4>
+        <h2>My Experience</h2>
+      </div>
+      <div className="expTimeline">
+        <Chrono
+          items={experience}
+          theme={{
+            primary: colors.secondaryColor,
+            secondary: colors.tertiaryColor,
+            cardBgColor: colors.secondarytextColor,
+            cardForeColor: colors.primaryColor,
+          }}
+          useReadMore={false}
+          mode="VERTICAL"
+        />
+      </div>
+    </div>
   );
 }
 

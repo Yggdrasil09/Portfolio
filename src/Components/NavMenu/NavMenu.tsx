@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import { Navbar } from 'react-bootstrap';
 
 import NavButton from './NavButton';
-import { config } from '../../Utilities/config';
+import { config } from '../../Utilities/data/config';
 import './NavMenu.scss';
 
 interface InavLink {

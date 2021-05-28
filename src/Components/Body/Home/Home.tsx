@@ -3,8 +3,8 @@ import {
   Container, Row, Col, Button,
 } from 'react-bootstrap';
 
-import { socialSites } from '../../../Utilities/social';
-import { info } from '../../../Utilities/info';
+import { socialSites } from '../../../Utilities/data/social';
+import { info } from '../../../Utilities/data/info';
 import './Home.scss';
 
 const { email } = socialSites;

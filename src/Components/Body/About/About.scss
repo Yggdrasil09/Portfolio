@@ -33,7 +33,6 @@
     top: 0;
     bottom:0;
     overflow-x:hidden;
-    z-index: 10;
     align-items: center;
     justify-content: center;
 
@@ -71,7 +70,7 @@
             .aboutData {
                 h5 {
                     margin-bottom: 2rem;
-                    color: $tertiray-color;
+                    color: $tertiary-color;
                 }
             }
         }
@@ -101,7 +100,7 @@
 
             .list {
                 columns: 30vh;
-                color: $tertiray-color;
+                color: $tertiary-color;
 
                 li::marker {
                     color: $secondary-color;
