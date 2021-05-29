@@ -1,6 +1,6 @@
 @import '../../../Utilities/colors';
 
-.resumeCon {
+.contactCon {
     width: 100%;
     padding-top: 10rem;
     display: flex;
@@ -12,7 +12,7 @@
     align-items: center;
     justify-content: flex-start;
 
-    .resumeHeader {
+    .contactHeader {
         width: 60%;
         margin-bottom: 2rem;
         border-bottom: solid 1px $secondarytext-color;
@@ -29,11 +29,35 @@
         }
     }
 
-    .resumeHolder {
+    .contactInfo {
         width: 60%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        h1 {
+            color: $secondarytext-color;
+        }
+
+        h4 {
+            color: $tertiary-color;
+            text-align: center;
+            width: 60%;
+        }
+
+        .contactButton {
+            padding: 1rem 1.75rem;
+            text-decoration: none !important;
+            color: $secondary-color;
+            margin-top: 2rem;
+            border: solid 2px $secondary-color;
+            border-radius: 6px;
+
+            &:hover {
+                background-color: $button-shade;
+                color: $tertiary-color;
+            }
+        }
     }
 }

@@ -1,6 +1,6 @@
 @import '../../../Utilities/colors';
 
-.resumeCon {
+.workCon {
     width: 100%;
     padding-top: 10rem;
     display: flex;
@@ -12,7 +12,7 @@
     align-items: center;
     justify-content: flex-start;
 
-    .resumeHeader {
+    .workHeader {
         width: 60%;
         margin-bottom: 2rem;
         border-bottom: solid 1px $secondarytext-color;
@@ -29,11 +29,17 @@
         }
     }
 
-    .resumeHolder {
+    .workModal {
         width: 60%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
     }
+}
+
+.modalElement {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    background-color: $secondary-color;
+    justify-content: space-between;
 }
