@@ -9,6 +9,9 @@ function Blog(): JSX.Element {
         <h4>04. </h4>
         <h2>Blog</h2>
       </div>
+      <div className="blogBody">
+        <h2>Currently under development...</h2>
+      </div>
     </div>
   );
 }

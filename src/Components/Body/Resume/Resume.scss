@@ -29,6 +29,18 @@
         }
     }
 
+    .resumeContent {
+        h2 {
+            color: $secondary-color;
+
+            a {
+                text-decoration: none;
+                color: $tertiary-color;
+                padding-left: 1rem;
+            }
+        }
+    }
+
     .resumeHolder {
         width: 60%;
         display: flex;

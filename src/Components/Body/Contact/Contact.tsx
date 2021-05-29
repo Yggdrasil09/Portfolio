@@ -16,7 +16,7 @@ function Contact(): JSX.Element {
       <div className="contactInfo">
         <h1>Get in Touch</h1>
         <h4>
-          Although I&apos;m not currently looking for any new opportunities,
+          I&apos;m currently looking for new opportunities,
           my inbox is always open. Whether you have a question or just want to say hi,
           I&apos;ll try my best to get back to you!
         </h4>

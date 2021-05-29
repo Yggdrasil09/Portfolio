@@ -26,10 +26,10 @@ function Resume(): JSX.Element {
         <h4>05. </h4>
         <h2>My Resume</h2>
       </div>
-      <div>
+      <div className="resumeContent">
         <h2>
           Feel free to download my resume
-          <a href={samplePdf} rel="noreferrer" target="_blank"> here</a>
+          <a href={samplePdf} rel="noreferrer" target="_blank">here</a>
         </h2>
       </div>
       <div className="resumeHolder">
