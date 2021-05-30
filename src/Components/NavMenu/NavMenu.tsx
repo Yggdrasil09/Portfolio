@@ -21,7 +21,6 @@ function NavMenu(): JSX.Element {
         fixed="top"
         className="navBar"
       >
-        <Navbar.Brand href="/">Logo</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <NavLink className="mr-auto" to="/">
