@@ -16,6 +16,7 @@ function About(): JSX.Element {
           <div className="aboutData">
             <h5>{about.details}</h5>
             <h5>{about.moreInfo}</h5>
+            <h5>{about.conclusiveStatement}</h5>
           </div>
         </div>
         <div className="aboutImg">

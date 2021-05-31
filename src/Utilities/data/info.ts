@@ -8,6 +8,6 @@ interface Iinfo {
 export const info:Iinfo = {
   name: 'Karthik Chowdary Paladugu.',
   position: 'I am a Software Developer.',
-  description: 'I am a Boston-based software engineer who specializes in building (and occasionally designing) exceptional digital experiences. Currently, I am an engineer at Upstatement focused on building accessible, human-centered products.',
+  description: 'I am a Software developer from India, currently looking for opportunities. I have just over a year of experience in creating UI/UX with React and back end development in Node.js. I also work in other languages like Python, C++ and Golang.',
   githubProfile: 'Yggdrasil09',
 };

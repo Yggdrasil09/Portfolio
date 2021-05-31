@@ -19,11 +19,11 @@ export const config: configInterface = {
     },
     {
       name: 'Twitter',
-      url: 'https://twitter.com/bchiang7',
+      url: 'https://twitter.com/PKarthikChowdry',
     },
     {
       name: 'Linkedin',
-      url: 'https://www.linkedin.com/in/bchiang7',
+      url: 'https://www.linkedin.com/in/karthikchowdaryp/',
     },
   ],
 

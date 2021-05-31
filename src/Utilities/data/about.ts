@@ -1,6 +1,7 @@
 export const about = {
-  details: 'Hello! My name is Brittany and I enjoy creating things that live on the internet. My interest in web development started back in 2012 when I decided to try editing custom Tumblr themes — turns out hacking together a custom reblog button taught me a lot about HTML & CSS!',
-  moreInfo: 'Fast-forward to today, and I\'ve had the privilege of working at an advertising agency, a start-up, a huge corporation, and a student-led design studio. My main focus these days is building accessible, inclusive products and digital experiences at Upstatement for a variety of clients.',
+  details: 'Hello! My name is Karthik Paladugu. I enjoy creating things for the web and contributing to open source projects. ',
+  moreInfo: 'Throughout the course of my career, I have honed my abilities in programming languages like Python, C++, Javascript and many more. I am an astute problem-solver capable of prioritizing and managing complex projects with proficiency.',
+  conclusiveStatement: 'Interested in the entire frontend spectrum and working on ambitious projects with positive people.',
   skills: [
     'C',
     'C++',
