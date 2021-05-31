@@ -35,3 +35,19 @@
         }
     }
 }
+
+@media only screen and (max-width: 550px) {
+    .blogCon {
+        position: relative;
+
+        .blogHeader {
+            width: 80%;
+        }
+
+        .blogBody {
+            position: sticky;
+            margin-left: 50%;
+            margin-right: 50%;
+        }
+    }
+}

@@ -30,6 +30,8 @@
     }
 
     .resumeContent {
+        margin-bottom: 3rem;
+
         h2 {
             color: $secondary-color;
 
@@ -47,5 +49,32 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .resumeCon {
+        position: relative;
+
+        .resumeHeader {
+            width: 80%;
+        }
+
+        .resumeContent {
+            position: sticky;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+    }
+}
+
+@media only screen and (min-width: 551px) and (max-width: 799px) {
+    .resumeCon {
+
+        .resumeContent {
+            position: sticky;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
     }
 }

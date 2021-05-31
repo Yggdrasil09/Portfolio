@@ -17,6 +17,7 @@
             flex: 100% !important;
             height: 100vh;
             padding-top: $imgPadding !important;
+            padding-bottom: 5rem;
         }
     }
 
@@ -112,24 +113,26 @@
 
 @media only screen and (min-width: 320px) and (max-width: 479px) {
     .about {
+        padding-top: 0;
         position: relative;
     }
-    @include layout($width: 60%);
+    @include layout($width: 80%);
 }
 
 @media only screen and (min-width: 480px) and (max-width: 550px){
     .about {
+        padding-top: 0;
         position: relative;
     }
-    @include layout($width: 60%, $imgPadding: 30rem);
+    @include layout;
 }
 
 @media only screen and (min-width: 551px) and (max-width: 799px){
-    @include layout($width: 60%, $imgPadding: 30rem);
+    @include layout($imgPadding: 40rem);
 }
 
 @media (min-width: 800px) and (max-width: 991px){
-    @include layout($imgPadding: 7rem);
+    @include layout($imgPadding: 12rem);
     
 }
 

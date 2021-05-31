@@ -1,5 +1,25 @@
 @import '../../../Utilities/colors';
 
+@mixin resizing($h4size: 1rem, $h1size: 3.5rem) {
+    .home {
+        margin-top: 80px;
+
+        .homeRow {
+
+            .homeCol {
+
+                h4 {
+                    font-size: $h4size;
+                }
+
+                h1 {
+                    font-size: $h1size;
+                }
+            }
+        }
+    }
+}
+
 .home {
     height: 100vh;
 
@@ -47,5 +67,19 @@
                 }
             }
         }
+    }
+}
+
+@media only screen and (max-width: 399px) {
+    @include resizing($h4size: 1rem,$h1size: 2.75rem);
+}
+
+@media only screen and (min-width: 400px) and (max-width: 479px) {
+    @include resizing();
+}
+
+@media only screen and (min-width: 480px) and (max-width: 550px){
+    .home {
+        margin-top: 100px;
     }
 }

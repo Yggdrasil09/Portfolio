@@ -30,7 +30,30 @@
     }
 
     .expTimeline {
-        width: 60%;
+        width: 70%;
         flex: 100%;
+    }
+}
+
+@media only screen and (max-width: 550px){
+    .expCon {
+        position: relative;
+    
+        .expHeader {
+            width: 80%;
+        }
+
+        .expTimeline {
+            width: 100%;
+        }
+    }
+}
+
+@media only screen and (min-width: 551px) and (max-width: 991px){
+    .expCon {
+    
+        .expTimeline {
+            width: 90%;
+        }
     }
 }

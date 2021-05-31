@@ -61,3 +61,17 @@
         }
     }
 }
+
+@media only screen and (max-width: 550px) {
+    .contactCon {
+        position: relative;
+        
+        .contactHeader {
+            width: 80%;
+        }
+
+        .contactInfo {
+            width: 80%;
+        }
+    }
+}
