@@ -74,3 +74,28 @@
 		transform:         translateY(-15px)
 	}
 }
+
+@media only screen and (max-width: 550px) {
+    .footer {
+        position:unset;
+        bottom: 0;
+        width: 100%;
+        display: block;
+        flex-direction: column;
+        height: auto;
+
+        div {
+            display: flex;
+            justify-content: center;
+            
+            .sitesCol {
+                display: inline-block;
+            }
+        }
+
+        .leftFooter, .rightFooter {
+            display: none;
+        }
+    }
+}
+

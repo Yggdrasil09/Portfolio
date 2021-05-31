@@ -15,7 +15,7 @@ function Work(): JSX.Element {
   }]);
 
   useEffect(() => {
-    fetch(`https://api.github.com/users/${info.githubProfile}/repos`)
+    fetch(`https://api.github.com/users/${info.githubProfile}/repos?per_page=1000`)
       .then((response) => response.json())
       .then((response) => {
         setProjectsData(response);
