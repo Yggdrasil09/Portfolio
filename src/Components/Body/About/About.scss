@@ -1,6 +1,6 @@
 @import '../../../Utilities/colors';
 
-@mixin layout($width: 80%, $imgPadding: 10rem) {
+@mixin layout($width: 80%, $imgPadding: 15rem) {
     .aboutSection {
         width: $width !important;
         display: flex !important;
@@ -81,6 +81,12 @@
             display: flex;
             justify-content: center;
             align-items: center;
+
+            img {
+                padding: 2rem;
+                border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+                border: dashed 5px $secondary-color;
+            }
         }
     }
 
@@ -132,7 +138,7 @@
 }
 
 @media (min-width: 800px) and (max-width: 991px){
-    @include layout($imgPadding: 12rem);
+    @include layout($imgPadding: 14rem);
     
 }
 
