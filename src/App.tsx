@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import NavMenu from './Components/NavMenu/NavMenu';
+import CanvasC from './Components/Canvas/Canvas';
 import Footer from './Components/Footer/Footer';
 import Home from './Components/Body/Home/Home';
 import About from './Components/Body/About/About';
@@ -31,6 +32,7 @@ function App(): JSX.Element {
   return (
     <Router>
       <NavMenu />
+      <CanvasC />
       <Main />
       <Footer />
     </Router>
