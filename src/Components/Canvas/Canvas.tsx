@@ -1,6 +1,9 @@
-import React, { useRef, useMemo, Suspense } from 'react';
+import React, {
+  useRef, useEffect, useMemo, Suspense,
+} from 'react';
 import * as THREE from 'three';
-import { Canvas, useFrame } from '@react-three/fiber';
+import { Canvas, useFrame, useLoader } from '@react-three/fiber';
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 
 import './Canvas.scss';
 
@@ -25,15 +28,15 @@ function getdotProperties(): dotProperties {
   const positions = [...Array(10000)].map((_, i) => {
     const position = new THREE.Vector3();
 
-    position.x = (i % 50) - 25;
-    position.y = Math.floor(i / 50) - 25;
+    position.x = (i % 60) - 30;
+    position.y = Math.floor(i / 60) - 30;
 
     position.y += (i % 2) * 0.5;
 
     position.x += Math.random() * 0.3;
     position.y += Math.random() * 0.3;
 
-    position.z = -10;
+    position.z = -15;
     return position;
   });
 
@@ -82,6 +85,36 @@ function Dots(): JSX.Element {
   );
 }
 
+function Scene(): JSX.Element {
+  const mixer = useRef<THREE.AnimationMixer | null>(null);
+  const gltf = useLoader(GLTFLoader, './scene.gltf');
+  // eslint-disable-next-line
+  const gltfRef = useRef<any>(null);
+
+  useEffect(() => {
+    if (gltfRef.current !== null) {
+      gltfRef.current.position.set(5, -2.5, 0);
+      gltfRef.current.rotation.set(0, -1, 0);
+    }
+  });
+
+  useEffect(() => {
+    if (gltf) {
+      mixer.current = new THREE.AnimationMixer(gltf.scene);
+      const action = mixer.current.clipAction(gltf.animations[0]);
+      action.play();
+    }
+  }, [gltf]);
+
+  useFrame(({ clock }) => {
+    if (mixer.current) {
+      mixer.current.update(clock.getDelta());
+    }
+  });
+
+  return <primitive ref={gltfRef} object={gltf.scene} scale={1.25} />;
+}
+
 function CanvasC(): JSX.Element {
   return (
     <Canvas className="canvas">
@@ -94,6 +127,7 @@ function CanvasC(): JSX.Element {
           castShadow
         />
         <Dots />
+        <Scene />
       </Suspense>
     </Canvas>
   );
